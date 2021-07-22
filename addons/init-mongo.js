@@ -8,7 +8,8 @@ function seed(dbName, user, password) {
 
   db.createCollection('api_keys');
   db.createCollection('roles');
-
+  
+  // this will be the x-api-keys header field for each request when containerized with docker
   db.api_keys.insert({
     metadata: 'To be used by the xyz vendor',
     key: 'GCMUDiuY5a7WvyUNt9n3QztToSHzK7Uj',

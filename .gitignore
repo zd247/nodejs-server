@@ -20,6 +20,6 @@ build
 # ignore test converage
 coverage
 
-# Environment varibles
-*.env
-*.env.*
+# # Environment varibles
+# *.env
+# *.env.*

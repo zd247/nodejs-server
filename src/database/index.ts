@@ -1,11 +1,13 @@
 import mongoose from 'mongoose';
 import Logger from '../core/Logger';
 import { db } from '../config';
+require('dotenv').load()
 
 // Build the connection string
 const dbURI = `mongodb://${db.user}:${encodeURIComponent(db.password)}@${db.host}:${db.port}/${
   db.name
-}`;
+  }`;
+
 
 const options = {
   useNewUrlParser: true,

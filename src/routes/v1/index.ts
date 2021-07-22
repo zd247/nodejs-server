@@ -9,6 +9,7 @@ import blogDetail from './blog/blogDetail';
 import writer from './blog/writer';
 import editor from './blog/editor';
 import user from './profile/user';
+import Logger from '../../core/Logger';
 
 const router = express.Router();
 
@@ -17,6 +18,9 @@ const router = express.Router();
 router.use('/', apikey);
 /*-------------------------------------------------------------------------*/
 
+
+// Router Handlers..
+// apply request handler function to router object
 router.use('/signup', signup);
 router.use('/login', login);
 router.use('/logout', logout);
